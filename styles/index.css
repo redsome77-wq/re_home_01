@@ -1,47 +1,167 @@
 /* index.css */
-.tie_bnr {}
-.tie_bnr a {}
-#wrap {}
-#wrap header {}
-#wrap header .top_bnr {}
-#wrap header .top_bnr .bnr_left {}
-#wrap header .top_bnr .bnr_left h1 {}
-#wrap header .top_bnr .bnr_left h1 a {}
-#wrap header .top_bnr .bnr_left h1 a img {}
-#wrap header .top_bnr .bnr_left .category {}
-#wrap header .top_bnr .bnr_left .category li {}
-#wrap header .top_bnr .bnr_left .category li a {}
-#wrap header .top_bnr .bnr_left .category li .whole_ham {}
-#wrap header .top_bnr .bnr_left .category li .whole_ham img {}
-#wrap header .top_bnr .bnr_right {}
-#wrap header .top_bnr .bnr_right a {}
-#wrap header .top_bnr .bnr_right a img {}
+#wrap header #hero_bnr {}
 #wrap header #hero_bnr .heroswiper {}
 #wrap header #hero_bnr .heroswiper .swiper-wrapper {}
-#wrap header #hero_bnr .heroswiper .swiper-wrapper .swiper-slide {}
-#wrap header #hero_bnr .heroswiper .swiper-wrapper .slide1 {}
+#wrap header #hero_bnr .heroswiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 960px;
+}
+#wrap header #hero_bnr .heroswiper .swiper-wrapper .slide1 {
+    background-image: url(../img/herobnr-1.jpg);
+    background-size:cover;
+    background-position: center;
+}
 #wrap header #hero_bnr .heroswiper .swiper-wrapper .slide2 {}
 #wrap header #hero_bnr .heroswiper .swiper-wrapper .slide3 {}
+#wrap header #hero_bnr .heroswiper .pagi_bar {}
+#wrap header #hero_bnr .heroswiper .pagi_bar .pg {}
+#wrap header #hero_bnr .heroswiper .pagi_bar .bg {}
+#wrap header #hero_bnr .heroswiper .pagi_bar .bg .bar {}
 #wrap main {}
 #wrap main .section {}
 #wrap main #new_product {}
+#wrap main #new_product .title {}
+#wrap main #new_product .title .title_info {}
+#wrap main #new_product .title .title_info h1 {}
+#wrap main #new_product .title .title_info p {}
+#wrap main #new_product .title .more_btn {}
+#wrap main #new_product .title .more_btn u {}
+#wrap main #new_product .container {}
+#wrap main #new_product .container .product_new {
+    display: flex; flex-flow: row nowrap;
+}
+#wrap main #new_product .container .product_new li {}
+#wrap main #new_product .container .product_new li .p_img {
+    position: relative;
+}
+#wrap main #new_product .container .product_new li .p_img .new_img {}
+#wrap main #new_product .container .product_new li .p_img .new_img img {width: 100%;}
+#wrap main #new_product .container .product_new li .p_img .wish_btn {
+    position: absolute; z-index: 999;
+    top:12px; right: 12px;
+    width: 24px; height: 19.95px;
+}
+#wrap main #new_product .container .product_new li .p_img .wish_btn img {width: 100%;}
+#wrap main #new_product .container .product_new li .p_info {}
+#wrap main #new_product .container .product_new li .p_info p {}
+#wrap main #new_product .container .product_new li .p_info .price {}
 #wrap main #insta {}
+#wrap main #insta .title {}
+#wrap main #insta .title .title_info {}
+#wrap main #insta .title .title_info h1 {}
+#wrap main #insta .title .title_info p {}
+#wrap main #insta .title .more_btn {}
+#wrap main #insta .title .more_btn u {}
+#wrap main #insta .container {
+    display: flex; flex-flow: row nowrap;
+}
+#wrap main #insta .container h1 {}
+#wrap main #insta .container h1 img {width: 100%;}
+#wrap main #insta .container .insta_right {
+    display: flex; flex-flow: column nowrap;
+}
+#wrap main #insta .container .insta_right .insta_right_1 {}
+#wrap main #insta .container .insta_right .insta_right_1 a {}
+#wrap main #insta .container .insta_right .insta_right_1 a img {width: 100%;}
+#wrap main #insta .container .insta_right .insta_right_2 {}
+#wrap main #insta .container .insta_right .insta_right_2 a {}
+#wrap main #insta .container .insta_right .insta_right_2 a img {width: 100%;}
 #wrap main #members_bnr {}
+#wrap main #members_bnr a {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+    width: 100%; height: 208px;
+    background-image: url(../img/member.png);
+    background-size: cover;
+    background-position: center;
+    gap:31px;
+}
+#wrap main #members_bnr a img {width: max-content; height: 48px;}
+#wrap main #members_bnr a .m_line {
+    background-color: #fff;
+    width:1px; height: 8px;}
+#wrap main #members_bnr a p {
+    color: #fff;
+    font-size: 0.88rem; font-weight:500;
+}
 #wrap main #collabo {}
-#wrap main #lookbook {}
+#wrap main #collabo .title {}
+#wrap main #collabo .title .title_info {}
+#wrap main #collabo .title .title_info h1 {}
+#wrap main #collabo .title .title_info p {}
+#wrap main #collabo .title .more_btn {}
+#wrap main #collabo .title .more_btn u {}
+#wrap main #collabo .container {}
+#wrap main #collabo .container .tab_title {}
+#wrap main #collabo .container .tab_title .p_btn.active {}
+#wrap main #collabo .container .tab_title .m_btn {}
+#wrap main #collabo .container .tab_contents {}
+#wrap main #collabo .container .tab_contents .peanuts {}
+#wrap main #collabo .container .tab_contents .moncch {}
+#wrap main #collabo .container .tab_contents .contents {}
+#wrap main #collabo .container .tab_contents .contents .collabo_mainlink {}
+#wrap main #collabo .container .tab_contents .contents .collabo_mainlink img {width: 100%;}
+#wrap main #collabo .container .tab_contents .contents .card_imgs {}
+#wrap main #collabo .container .tab_contents .contents .card_imgs a {}
+#wrap main #collabo .container .tab_contents .contents .card_imgs a img {width: 100%;}
+#wrap main #lookbook {
+    background-color: #F8F8F8;
+    width: 100%;
+}
+#wrap main #lookbook .title {
+    margin: 0 auto;
+    width: 1420px;
+}
+#wrap main #lookbook .title .title_info {}
+#wrap main #lookbook .title .title_info h1 {}
+#wrap main #lookbook .title .title_info p {}
+#wrap main #lookbook .container {
+    margin: 0 auto;
+    width: 1420px;
+}
+#wrap main #lookbook .container .lbmain {}
+#wrap main #lookbook .container .lbmain img {width: 100%;}
+#wrap main #lookbook .container .right_wrap {}
+#wrap main #lookbook .container .right_wrap h2 {}
+#wrap main #lookbook .container .right_wrap h2 em {}
+#wrap main #lookbook .container .right_wrap .more_btn {}
+#wrap main #lookbook .container .right_wrap .more_btn u {}
+#wrap main #lookbook .container .right_wrap .lb_swiper {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img img {width: 100%;}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark img {width: 100%;}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide1 {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide2 {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide3 {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide4 {}
+#wrap main #lookbook .container .right_wrap .pagi_bar {}
+#wrap main #lookbook .container .right_wrap .pagi_bar .pg {}
+#wrap main #lookbook .container .right_wrap .pagi_bar .bg {}
+#wrap main #lookbook .container .right_wrap .pagi_bar .bar {}
 #wrap main #brand {}
-#wrap footer {}
-#wrap footer .line_zone {}
-#wrap footer .line_zone .f_line {}
-#wrap footer .line_zone .logozone {}
-#wrap footer .line_zone .logozone a {}
-#wrap footer .line_zone .logozone a img {}
-#wrap footer .line_zone .f_menu {}
-#wrap footer .line_zone .f_menu p {}
-#wrap footer .line_zone .f_menu p em {}
-#wrap footer .line_zone .f_menu .f_bundle {}
-#wrap footer .line_zone .f_menu .f_bundle a {}
-#wrap footer .line_zone .f_contact {}
-#wrap footer .line_zone .f_customer {}
-#wrap footer address {}
-#wrap footer address p {}
+#wrap main #brand .title {}
+#wrap main #brand .title .title_info {}
+#wrap main #brand .title .title_info h1 {}
+#wrap main #brand .title .title_info p {}
+#wrap main #brand .container {}
+#wrap main #brand .container .swiper {}
+#wrap main #brand .container .swiper .swiper-wrapper {}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide {}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .brand_info {}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .brand_btn {}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .brand_btn p {}
+#wrap main #brand .container .swiper .swiper-wrapper .slide1 {}
+#wrap main #brand .container .swiper .swiper-wrapper .slide2 {}
+#wrap main #brand .container .swiper .swiper-wrapper .slide3 {}
+#wrap main #brand .container .swiper .pagi_bar {}
+#wrap main #brand .container .swiper .pagi_bar .pg {}
+#wrap main #brand .container .swiper .pagi_bar .bg {}
+#wrap main #brand .container .swiper .pagi_bar .bg .bar {}
