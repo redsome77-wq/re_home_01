@@ -54,11 +54,25 @@
 #wrap main #insta .title .more_btn u {}
 #wrap main #insta .container {
     display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
 }
-#wrap main #insta .container h1 {}
-#wrap main #insta .container h1 img {width: 100%;}
+#wrap main #insta .container .r_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 560px; height:560px;
+}
+#wrap main #insta .container .r_logo img {width: 70%;}
 #wrap main #insta .container .insta_right {
-    display: flex; flex-flow: column nowrap;
+    display: flex; flex-flow: column nowrap; gap: 10px;
+}
+#wrap main #insta .container .insta_right .insta_right_1,
+#wrap main #insta .container .insta_right .insta_right_2 {
+    display: flex; flex-flow: row nowrap; gap: 10px;
+}
+#wrap main #insta .container .insta_right .insta_right_1 a,
+#wrap main #insta .container .insta_right .insta_right_2 a {
+    width: 270px; height: 270px;
 }
 #wrap main #insta .container .insta_right .insta_right_1 {}
 #wrap main #insta .container .insta_right .insta_right_1 a {}
@@ -92,18 +106,58 @@
 #wrap main #collabo .title .more_btn {}
 #wrap main #collabo .title .more_btn u {}
 #wrap main #collabo .container {}
-#wrap main #collabo .container .tab_title {}
-#wrap main #collabo .container .tab_title .p_btn.active {}
-#wrap main #collabo .container .tab_title .m_btn {}
+#wrap main #collabo .container .tab_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#wrap main #collabo .container .tab_title a {
+    font-size: 1.50rem; font-weight: 500; color: #a3a3a3;
+    margin-right: 25px;
+}
+#wrap main #collabo .container .tab_title .p_btn.active {
+    color: #E72819; text-decoration:underline;;
+}
+#wrap main #collabo .container .tab_title .m_btn {
+    margin-right: 0px;
+}
 #wrap main #collabo .container .tab_contents {}
 #wrap main #collabo .container .tab_contents .peanuts {}
-#wrap main #collabo .container .tab_contents .moncch {}
-#wrap main #collabo .container .tab_contents .contents {}
-#wrap main #collabo .container .tab_contents .contents .collabo_mainlink {}
-#wrap main #collabo .container .tab_contents .contents .collabo_mainlink img {width: 100%;}
-#wrap main #collabo .container .tab_contents .contents .card_imgs {}
-#wrap main #collabo .container .tab_contents .contents .card_imgs a {}
-#wrap main #collabo .container .tab_contents .contents .card_imgs a img {width: 100%;}
+#wrap main #collabo .container .tab_contents .moncch {
+    display: none;
+}
+#wrap main #collabo .container .tab_contents .peanuts {
+    display: flex;  flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#wrap main #collabo .container .tab_contents .peanuts * a {
+    background-size: cover;
+    background-position: center;
+}
+#wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink {
+    width: 908px; height: 760px;
+}
+#wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink a {}
+#wrap main #collabo .container .tab_contents .peanuts .card_imgs {
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+}
+#wrap main #collabo .container .tab_contents .peanuts .card_imgs a {
+    width: 502px; height: 246px;
+}
+#wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink {
+    background-image: url(../img/colla_01.png);
+    background-size: cover;
+    background-position: center;
+}
+#wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_keyring {
+    background-image: url(../img/colla_03.jpg);
+}
+#wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_cp {
+    background-image: url(../img/colla_02.jpg);
+}
+#wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_show {
+    background-image: url(../img/colla_04.png);
+}
 #wrap main #lookbook {
     background-color: #F8F8F8;
     width: 100%;
@@ -119,24 +173,48 @@
     margin: 0 auto;
     width: 1420px;
 }
+#wrap main #lookbook .container .lbmain {
+    width: 523px; height: 754px;
+    background-image: url(../img/looks/look_main.jpg);
+    background-position: center; background-size: cover;
+}
 #wrap main #lookbook .container .lbmain {}
-#wrap main #lookbook .container .lbmain img {width: 100%;}
 #wrap main #lookbook .container .right_wrap {}
-#wrap main #lookbook .container .right_wrap h2 {}
-#wrap main #lookbook .container .right_wrap h2 em {}
-#wrap main #lookbook .container .right_wrap .more_btn {}
-#wrap main #lookbook .container .right_wrap .more_btn u {}
+#wrap main #lookbook .container .right_wrap .slide_title {
+    display: flex;  flex-flow: row nowrap;
+    justify-content: space-between; align-items: end;
+    margin-bottom: 30px;
+}
+#wrap main #lookbook .container .right_wrap .slide_title h2 {
+    font-size: 1.81rem; font-weight: 300;
+}
+#wrap main #lookbook .container .right_wrap .slide_title h2 em {
+    font-size: 2.0rem; font-weight:600;
+}
+#wrap main #lookbook .container .right_wrap .slide_title .more_btn {}
+#wrap main #lookbook .container .right_wrap .slide_title .more_btn u {}
 #wrap main #lookbook .container .right_wrap .lb_swiper {}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper {}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img {
+    margin-bottom: 8px;
+}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img {
+    position: relative;
+}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img img {width: 100%;}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
+    position: absolute; z-index: 999;
+    top: 27px; right: 27px;
+    width: 40px; height: 40px;}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark img {width: 100%;}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
+    font-weight: 300;
+}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
+    font-weight:600;
+}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide1 {}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide2 {}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide3 {}
@@ -153,14 +231,52 @@
 #wrap main #brand .container {}
 #wrap main #brand .container .swiper {}
 #wrap main #brand .container .swiper .swiper-wrapper {}
-#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide {}
-#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
-#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .brand_info {}
-#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .brand_btn {}
-#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .brand_btn p {}
-#wrap main #brand .container .swiper .swiper-wrapper .slide1 {}
-#wrap main #brand .container .swiper .swiper-wrapper .slide2 {}
-#wrap main #brand .container .swiper .swiper-wrapper .slide3 {}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide {
+    width: max-content; height: 655px;
+    background-position: center;
+    background-size: cover;
+    display: flex;  flex-flow: column nowrap;
+    justify-content: center; align-items: center; gap: 10px;
+}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide * {
+    color: #fff;
+    text-align: center;
+}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk {
+    display: flex; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.4);
+    flex-flow: column nowrap; justify-content: center; align-items: center;
+}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .b_logo {
+    height: 179px;
+    display: flex;  justify-content: center; align-items: center;
+}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .b_logo img {width:100%;}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_info {
+    font-size: 1.06rem; line-height: 1.35;
+    padding: 50px 0;
+}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_btn {
+    border: solid 1px #fff;
+    border-radius: 6px;
+    padding: 4px 41px 0; height: 35px; width: max-content;
+    margin: 0 auto;
+}
+#wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_btn p {
+    font-size: 1.06rem; line-height: 1.35;
+}
+#wrap main #brand .container .swiper .swiper-wrapper .slide1 {
+    background-image:url(../img/brand/brand_01.png);
+}
+#wrap main #brand .container .swiper .swiper-wrapper .slide1 .slide_blk .b_logo {width: 313px;}
+#wrap main #brand .container .swiper .swiper-wrapper .slide2 .slide_blk .b_logo {width: 352px;}
+#wrap main #brand .container .swiper .swiper-wrapper .slide3 .slide_blk .b_logo {width: 402px;}
+#wrap main #brand .container .swiper .swiper-wrapper .slide2 {
+    background-image:url(../img/brand/brand_02.png);
+
+}
+#wrap main #brand .container .swiper .swiper-wrapper .slide3 {
+    background-image:url(../img/brand/brand_03.png);
+}
 #wrap main #brand .container .swiper .pagi_bar {}
 #wrap main #brand .container .swiper .pagi_bar .pg {}
 #wrap main #brand .container .swiper .pagi_bar .bg {}
