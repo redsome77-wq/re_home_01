@@ -6,11 +6,13 @@ const heroSwiper = new Swiper(heroBnr, {
     loop:true,
     slidesPerView: 1,
 });
+
 const lookSwiper = new Swiper(lookbookZone, {
     loop:true,
     slidesPerView: 2.1,
     spaceBetween: 17,
 });
+
 const brandSwiper = new Swiper(brandZone, {
     loop:true,
     slidesPerView: 3,

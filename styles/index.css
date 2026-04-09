@@ -13,10 +13,22 @@
 }
 #wrap header #hero_bnr .heroswiper .swiper-wrapper .slide2 {}
 #wrap header #hero_bnr .heroswiper .swiper-wrapper .slide3 {}
-#wrap header #hero_bnr .heroswiper .pagi_bar {}
-#wrap header #hero_bnr .heroswiper .pagi_bar .pg {}
-#wrap header #hero_bnr .heroswiper .pagi_bar .bg {}
-#wrap header #hero_bnr .heroswiper .pagi_bar .bg .bar {}
+#wrap header #hero_bnr .heroswiper .pagi_bar {
+    background-color:hsl(0, 100%, 50%);
+    width: 20px; height: 50px;
+}
+#wrap header #hero_bnr .heroswiper .pagi_bar .pg {
+    background-color: turquoise;
+    width: 20px; height: 50px;
+}
+#wrap header #hero_bnr .heroswiper .pagi_bar .bg {
+    background-color: yellow;
+    width: 20px; height: 50px;
+}
+#wrap header #hero_bnr .heroswiper .pagi_bar .bg .bar {
+    background-color: violet;
+    width: 20px; height: 50px;
+}
 #wrap main {}
 #wrap main .section {}
 #wrap main #new_product {}
@@ -172,14 +184,17 @@
 #wrap main #lookbook .container {
     margin: 0 auto;
     width: 1420px;
+    display: flex; flex-flow: row nowrap; gap:51px
+
 }
-#wrap main #lookbook .container .lbmain {
-    width: 523px; height: 754px;
-    background-image: url(../img/looks/look_main.jpg);
-    background-position: center; background-size: cover;
+#wrap main #lookbook .container .lbmain {width: 523px;}
+#wrap main #lookbook .container .lbmain a {}
+#wrap main #lookbook .container .lbmain img {
+    width: 100%;
 }
-#wrap main #lookbook .container .lbmain {}
-#wrap main #lookbook .container .right_wrap {}
+#wrap main #lookbook .container .right_wrap {
+    width: 846px;
+}
 #wrap main #lookbook .container .right_wrap .slide_title {
     display: flex;  flex-flow: row nowrap;
     justify-content: space-between; align-items: end;
@@ -252,7 +267,7 @@
 }
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .b_logo img {width:100%;}
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_info {
-    font-size: 1.06rem; line-height: 1.35;
+    font-size: 1.06rem; line-height: 1.35; font-weight: 300;
     padding: 50px 0;
 }
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_btn {
@@ -262,7 +277,7 @@
     margin: 0 auto;
 }
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_btn p {
-    font-size: 1.06rem; line-height: 1.35;
+    font-size: 1.06rem; line-height: 1.35; font-weight: 300;
 }
 #wrap main #brand .container .swiper .swiper-wrapper .slide1 {
     background-image:url(../img/brand/brand_01.png);
@@ -277,7 +292,4 @@
 #wrap main #brand .container .swiper .swiper-wrapper .slide3 {
     background-image:url(../img/brand/brand_03.png);
 }
-#wrap main #brand .container .swiper .pagi_bar {}
-#wrap main #brand .container .swiper .pagi_bar .pg {}
-#wrap main #brand .container .swiper .pagi_bar .bg {}
-#wrap main #brand .container .swiper .pagi_bar .bg .bar {}
+#wrap main #brand .container .swiper .swiper-pagination {}
