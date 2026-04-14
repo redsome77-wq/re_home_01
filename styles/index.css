@@ -1,6 +1,8 @@
 /* index.css */
 #wrap main #hero_bnr {}
-#wrap main #hero_bnr .heroswiper {}
+#wrap main #hero_bnr .heroswiper {
+    position: relative;
+}
 #wrap main #hero_bnr .heroswiper .swiper-wrapper {}
 #wrap main #hero_bnr .heroswiper .swiper-wrapper .swiper-slide {
     width: 100%;
@@ -11,23 +13,20 @@
     background-size:cover;
     background-position: center;
 }
-#wrap main #hero_bnr .heroswiper .swiper-wrapper .slide2 {}
+#wrap main #hero_bnr .heroswiper .swiper-wrapper .slide2 {
+    background-image: url(../img/herobnr-1.jpg);
+    background-size:cover;
+    background-position: center;
+}
 #wrap main #hero_bnr .heroswiper .swiper-wrapper .slide3 {}
-#wrap main #hero_bnr .heroswiper .pagi_bar {
-    background-color:hsl(0, 100%, 50%);
-    width: 20px; height: 50px;
+#wrap main #hero_bnr .heroswiper .swiper-scrollbar {
+    background-color: rgba(226, 226, 226, 0.55);
+    height: 1px; width: 1048px;
+    position: absolute; bottom: 66px; left: 436px;
 }
-#wrap main #hero_bnr .heroswiper .pagi_bar .pg {
-    background-color: turquoise;
-    width: 20px; height: 50px;
-}
-#wrap main #hero_bnr .heroswiper .pagi_bar .bg {
-    background-color: yellow;
-    width: 20px; height: 50px;
-}
-#wrap main #hero_bnr .heroswiper .pagi_bar .bg .bar {
-    background-color: violet;
-    width: 20px; height: 50px;
+#wrap main #hero_bnr .heroswiper .swiper-scrollbar .swiper-scrollbar-drag {
+    background-color: #fff;
+    height: 2px; width: 266px;
 }
 #wrap main {}
 #wrap main .section {}
@@ -209,7 +208,9 @@
 #wrap main #lookbook .container .right_wrap .slide_title .more_btn {}
 #wrap main #lookbook .container .right_wrap .slide_title .more_btn u {}
 #wrap main #lookbook .container .right_wrap .lb_swiper {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper {}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper {
+    height: 583px;
+}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide {}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img {
     margin-bottom: 8px;
@@ -230,21 +231,27 @@
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
     font-weight:600;
 }
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-scrollbar {
+    background-color: rgb(252, 252, 252);
+    width: 846px; height: 2px;
+}
+#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-scrollbar .swiper-scrollbar-drag {
+    background-color: #fff;
+    width: 335px; height: 3px;
+}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide1 {}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide2 {}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide3 {}
 #wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide4 {}
-#wrap main #lookbook .container .right_wrap .pagi_bar {}
-#wrap main #lookbook .container .right_wrap .pagi_bar .pg {}
-#wrap main #lookbook .container .right_wrap .pagi_bar .bg {}
-#wrap main #lookbook .container .right_wrap .pagi_bar .bar {}
 #wrap main #brand {}
 #wrap main #brand .title {}
 #wrap main #brand .title .title_info {}
 #wrap main #brand .title .title_info h1 {}
 #wrap main #brand .title .title_info p {}
 #wrap main #brand .container {}
-#wrap main #brand .container .swiper {}
+#wrap main #brand .container .swiper {
+    position: relative;
+}
 #wrap main #brand .container .swiper .swiper-wrapper {}
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide {
     width: max-content; height: 655px;
@@ -292,4 +299,12 @@
 #wrap main #brand .container .swiper .swiper-wrapper .slide3 {
     background-image:url(../img/brand/brand_03.png);
 }
-#wrap main #brand .container .swiper .swiper-pagination {}
+#wrap main #brand .container .swiper swiper-scrollbar {
+    background-color: rgba(226, 226, 226, 0.55);
+    height: 1px; width: 1048px;
+}
+#wrap main #brand .container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+    background-color: #fff;
+    height: 2px; width: 266px;
+    text-align: center;
+}

@@ -61,6 +61,7 @@
     font-size: 0.88rem; font-weight: 500; line-height: 1.5;
 }
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth {
+    width: max-content;
     display: none; flex-flow: column nowrap;
     text-align:left;
     margin-top: 40px;

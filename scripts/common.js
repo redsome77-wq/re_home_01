@@ -1,13 +1,24 @@
 const navBar = document.querySelector('.bnr_left');
 const backBox = document.querySelector('.sub_bg');
-const navLi = document.querySelector('li .lnb_depth');
+const navLi = document.querySelectorAll('li .lnb_depth');
 console.log(navBar, backBox, navLi);
 
-navBar.addEventListener('mouseover', function(){
+for(let i=0; i<6; i++){
+    navLi[i].style.display='none';
+    navBar.addEventListener('mouseover', function(){
         backBox.style.display='flex';
-        navLi.style.display='flex';
-    })
-navBar.addEventListener('mouseout', function(){
+        navLi[i].style.display='flex';
+    });
+    backBox.addEventListener('mouseover', function(){
+        backBox.style.display='flex';
+        navLi[i].style.display='flex';
+    });
+    navBar.addEventListener('mouseout', function(){
         backBox.style.display='none';
-        navLi.style.display='none';
-    })
+        navLi[i].style.display='none';
+    });
+    backBox.addEventListener('mouseout', function(){
+        backBox.style.display='none';
+        navLi[i].style.display='none';
+    });
+};
