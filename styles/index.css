@@ -180,69 +180,75 @@
 #wrap main #lookbook .title .title_info {}
 #wrap main #lookbook .title .title_info h1 {}
 #wrap main #lookbook .title .title_info p {}
-#wrap main #lookbook .container {
+#wrap main #lookbook .container {}
+#wrap main #lookbook .container .bigbdle {}
+#wrap main #lookbook .container .swiper-pagination {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .slide1 {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .slide2 {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .slide3 {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide {
     margin: 0 auto;
     width: 1420px;
     display: flex; flex-flow: row nowrap; gap:51px
-
 }
-#wrap main #lookbook .container .lbmain {width: 523px;}
-#wrap main #lookbook .container .lbmain a {}
-#wrap main #lookbook .container .lbmain img {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .lbmain {width: 523px;}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .lbmain a {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .lbmain img {
     width: 100%;
 }
-#wrap main #lookbook .container .right_wrap {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap {
     width: 846px;
 }
-#wrap main #lookbook .container .right_wrap .slide_title {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .slide_title {
     display: flex;  flex-flow: row nowrap;
     justify-content: space-between; align-items: end;
     margin-bottom: 30px;
 }
-#wrap main #lookbook .container .right_wrap .slide_title h2 {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .slide_title h2 {
     font-size: 1.81rem; font-weight: 300;
 }
-#wrap main #lookbook .container .right_wrap .slide_title h2 em {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .slide_title h2 em {
     font-size: 2.0rem; font-weight:600;
 }
-#wrap main #lookbook .container .right_wrap .slide_title .more_btn {}
-#wrap main #lookbook .container .right_wrap .slide_title .more_btn u {}
-#wrap main #lookbook .container .right_wrap .lb_swiper {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap  .slide_title .more_btn {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap  .slide_title .more_btn u {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper {
     height: 583px;
 }
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img {
-    margin-bottom: 8px;
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide {
+    display: flex; flex-flow: column nowrap; gap: 8px;
 }
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img {
     position: relative;
 }
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img img {width: 100%;}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img img {width: 100%;}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
     position: absolute; z-index: 999;
     top: 27px; right: 27px;
     width: 40px; height: 40px;}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark img {width: 100%;}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark img {width: 100%;}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
     font-weight: 300;
 }
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
     font-weight:600;
 }
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-scrollbar {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-scrollbar {
     background-color: rgb(252, 252, 252);
     width: 846px; height: 2px;
 }
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-scrollbar .swiper-scrollbar-drag {
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-scrollbar .swiper-scrollbar-drag {
     background-color: #fff;
     width: 335px; height: 3px;
 }
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide1 {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide2 {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide3 {}
-#wrap main #lookbook .container .right_wrap .lb_swiper .swiper-wrapper .slide4 {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .slide1 {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .slide2 {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .slide3 {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .slide4 {}
 #wrap main #brand {}
 #wrap main #brand .title {}
 #wrap main #brand .title .title_info {}

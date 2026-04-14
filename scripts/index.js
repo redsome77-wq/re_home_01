@@ -1,4 +1,5 @@
 const heroBnr = document.querySelector ('.heroswiper');
+const lookbookBig = document.querySelector ('.bigbdle');
 const lookbookZone = document.querySelector ('.lb_swiper');
 const brandZone = document.querySelector ('.brandcard');
 
@@ -8,6 +9,17 @@ const heroSwiper = new Swiper(heroBnr, {
     scrollbar: {
         el: ".heroswiper .swiper-scrollbar",
         hide: false,
+    },
+});
+
+const lookBigSwiper = new Swiper(lookbookBig, {
+    loop:true,
+    slidesPerView: 1,
+    pagination : {
+        //페이지 대상 html 연결, 모양, 동적옵션
+        el:'.web + .web_page', //부모선택자 1~2개는 작성해서 구분해주기
+        type:'fraction', //기본값 'bullets', 'fraction':페이지 번호형
+        //dynamicBullets:true, //type이 bullets(기본값)일때만 가능
     },
 });
 
