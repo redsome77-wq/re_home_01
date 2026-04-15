@@ -17,12 +17,12 @@ const lookBigSwiper = new Swiper(lookbookBig, {
     loop:true,
     slidesPerView: 1,
     pagination : {
-        el:'.bigbdle .swiper-pagination',
+        el:'.bigbdle .pnum .page',
         type:'fraction',
     },
     navigation: {
-        nextEl:'.swiper-wrapper .next',
-        prevEl:'.swiper-wrapper .prev',
+        nextEl:'.pnum .next',
+        prevEl:'.pnum .prev',
     },
 });
 
