@@ -6,7 +6,7 @@
 #wrap main #hero_bnr .heroswiper .swiper-wrapper {}
 #wrap main #hero_bnr .heroswiper .swiper-wrapper .swiper-slide {
     width: 100%;
-    height: 960px;
+    height: 90vh;
 }
 #wrap main #hero_bnr .heroswiper .swiper-wrapper .slide1 {
     background-image: url(../img/herobnr-1.jpg);
@@ -39,9 +39,13 @@
 #wrap main #new_product .title .more_btn u {}
 #wrap main #new_product .container {}
 #wrap main #new_product .container .product_new {
-    display: flex; flex-flow: row nowrap;
+    display: flex; flex-flow: row wrap;
+    justify-content: space-between;
+    gap:8px;
 }
-#wrap main #new_product .container .product_new li {}
+#wrap main #new_product .container .product_new li {
+    width: 319px;
+}
 #wrap main #new_product .container .product_new li .p_img {
     position: relative;
 }
@@ -54,8 +58,14 @@
 }
 #wrap main #new_product .container .product_new li .p_img .wish_btn img {width: 100%;}
 #wrap main #new_product .container .product_new li .p_info {}
-#wrap main #new_product .container .product_new li .p_info p {}
-#wrap main #new_product .container .product_new li .p_info .price {}
+#wrap main #new_product .container .product_new li .p_info p {
+    font-size: 1.0rem;
+    font-weight: 300;
+}
+#wrap main #new_product .container .product_new li .p_info .price {
+    font-size: 1.0rem;
+    font-weight:600;
+}
 #wrap main #insta {}
 #wrap main #insta .title {}
 #wrap main #insta .title .title_info {}
@@ -180,17 +190,42 @@
 #wrap main #lookbook .title .title_info {}
 #wrap main #lookbook .title .title_info h1 {}
 #wrap main #lookbook .title .title_info p {}
-#wrap main #lookbook .container {}
-#wrap main #lookbook .container .bigbdle {}
-#wrap main #lookbook .container .swiper-pagination {}
-#wrap main #lookbook .container .bigbdle .swiper-wrapper {}
+#wrap main #lookbook .container {
+    position: relative;
+}
+#wrap main #lookbook .container .bigbdle {
+    position: relative;
+}
+#wrap main #lookbook .container .bigbdle .swiper-pagination {
+    position: absolute; width: max-content; left: 45%;
+    bottom: 6%;
+}
+#wrap main #lookbook .container .bigbdle .swiper-pagination .swiper-pagination-current {
+    font-weight: 600;
+}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .next,
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .prev {
+    position: absolute; z-index: 999;
+    width: max-content; height: max-content;
+    color: #000;
+    transform: scale(0.7);
+}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .next {
+    left: 50%; bottom: 0;
+}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper .prev {}
+#wrap main #lookbook .container .bigbdle .swiper-wrapper {
+    position: relative;
+    margin-bottom: 44px;
+}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .slide1 {}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .slide2 {}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .slide3 {}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide {
     margin: 0 auto;
     width: 1420px;
-    display: flex; flex-flow: row nowrap; gap:51px
+    display: flex; flex-flow: row nowrap; gap:51px;
+    justify-content: center;
 }
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .lbmain {width: 523px;}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .lbmain a {}
@@ -201,7 +236,7 @@
     width: 846px;
 }
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .slide_title {
-    display: flex;  flex-flow: row nowrap;
+    display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: end;
     margin-bottom: 30px;
 }
@@ -227,15 +262,16 @@
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img img {width: 100%;}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
     position: absolute; z-index: 999;
-    top: 27px; right: 27px;
-    width: 40px; height: 40px;}
+    top: 54px; right: 27px;
+    width: 40px; height: 40px;
+}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark img {width: 100%;}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info {}
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
     font-weight: 300;
 }
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
-    font-weight:600;
+    font-weight: 600;
 }
 #wrap main #lookbook .container .bigbdle .swiper-wrapper .swiper-slide .right_wrap .lb_swiper .swiper-scrollbar {
     background-color: rgb(252, 252, 252);
@@ -305,12 +341,13 @@
 #wrap main #brand .container .swiper .swiper-wrapper .slide3 {
     background-image:url(../img/brand/brand_03.png);
 }
-#wrap main #brand .container .swiper swiper-scrollbar {
+#wrap main #brand .container .swiper .swiper-scrollbar {
     background-color: rgba(226, 226, 226, 0.55);
     height: 1px; width: 1048px;
+    position: absolute; bottom: 30px; left: 186px;
 }
 #wrap main #brand .container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
     background-color: #fff;
     height: 2px; width: 266px;
-    text-align: center;
+    margin: 0 auto;
 }
