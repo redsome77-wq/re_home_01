@@ -151,7 +151,6 @@
 #wrap footer * em {
     font-size: 0.75rem; font-weight:600; line-height: 1.5;
 }
-
 #wrap footer .line_zone {
     display: flex; flex-flow: row nowrap;
     justify-content: center; align-items: center;

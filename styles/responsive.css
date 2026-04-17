@@ -134,6 +134,12 @@
     #wrap main #lookbook .container .bigbdle .pnum {
         left: 45%; bottom:0;
     }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
+    font-size: 0.69rem;
+}
+#wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
+    font-size: 0.81rem;
+}
 
 /* -------------------------------------------------5.brand */
     #wrap main #brand .container .swiper .swiper-scrollbar {
@@ -165,4 +171,222 @@
         gap:60px;
     }
 }
-@media screen and (max-width:401px) {}
+@media screen and (max-width:402px) {
+/* -------------------------------------------------띠배너 */
+    .tie_bnr {
+    display: none;
+    }
+
+/* -------------------------------------------------~헤더 */
+    #wrap header .top_bnr {
+        padding: 0 15px;
+    }
+
+    #wrap header .top_bnr .bnr_left .nav {
+    font-size: 0.63rem; gap: 10px;
+    }
+    #wrap header .top_bnr .bnr_left .nav li a {
+    font-size: 0.63rem; 
+    }
+    #wrap header .top_bnr .bnr_left h1 {
+    width: 111px; height: 14px;
+    }
+    #wrap header .top_bnr .bnr_right a {
+    font-size: 0.63rem;
+    }
+    #wrap header .top_bnr .bnr_right a:nth-child(1) {width: 12px; height: 12px;}
+    #wrap header .top_bnr .bnr_right a:nth-child(2) {width: 13px; height: 11px;}
+    #wrap header .top_bnr .bnr_right a:nth-child(3) {width: 14px; height: 14px;}
+    #wrap header .top_bnr .bnr_right a:nth-child(4) {width: 12px; height: 12px;}
+    #wrap header .top_bnr .bnr_right a:nth-child(5) {line-height: 1.8;}
+    #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 li a {
+    font-size: 0.63rem;
+    }
+
+/* -------------------------------------------------히어로배너 */
+    #wrap main #hero_bnr .heroswiper .swiper-scrollbar {
+        width: 304px;
+    }
+    #wrap main #hero_bnr .heroswiper .swiper-scrollbar .swiper-scrollbar-drag {
+        width: 97px;
+    }
+    #wrap main #hero_bnr .heroswiper .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 835px;
+    }
+    #wrap main #hero_bnr .heroswiper .swiper-wrapper .slide1 {
+        background-image: url(../img/herobnr-m2-2.jpg);
+    }
+    #wrap main #hero_bnr .heroswiper .swiper-wrapper .slide2 {
+        background-image: url(../img/herobnr-m2-2.jpg);
+    }
+
+/* -------------------------------------------------메인~섹션별 */
+    #wrap main .section {
+        padding: 50px 15px;
+    }
+    #wrap main .section .title .title_info h1 {
+        font-size: 0.94rem;
+    }
+    #wrap main .section .title .title_info p {
+        font-size: 0.5rem;
+    }
+/* -------------------------------------------------1.new */
+    #wrap main #new_product .container .product_list {
+        width:100%;
+        display: flex; flex-flow: row nowrap;
+        justify-content:space-between;
+        gap:10px;
+    }
+    #wrap main #new_product .container .product_new_2 {
+        display: none;
+    }
+    #wrap main #new_product .container .product_list li {
+        min-width: 181px;
+    }
+    #wrap main #new_product .container .product_list li .p_info p {
+        font-size: 0.69rem;
+    }
+    #wrap main #new_product .container .product_list li .p_info .price {
+        font-size: 0.81rem;
+    }
+/* -------------------------------------------------2.insta */
+    #wrap main #insta .container .red_logo {
+        display:none;
+    }
+    #wrap main #insta .container .instazone .insta_right a {
+        width: 117px; height: 117px;
+    }
+/* -------------------------------------------------3.member */
+    #wrap main #members_bnr {
+        padding: 50px 0;
+    }
+    #wrap main #members_bnr a {
+        width: 100%; height: 61px;
+        background-image: url(../img/member.png);
+        background-size: cover;
+        background-position: center;
+        gap:16px;
+    }
+    #wrap main #members_bnr a img {width: max-content; height: 21px;}
+
+    #wrap main #members_bnr a p {
+        font-size: 0.5rem;
+    }
+/* -------------------------------------------------3.collabo */
+    #wrap main #collabo .container .tab_title a {
+        font-size: 0.94rem; 
+    }
+    #wrap main #collabo .container .tab_contents .contents {
+        flex-flow: column nowrap; gap:5px;
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs {
+        width: 100%;
+        display: flex; flex-flow: row nowrap;
+        justify-content: space-between;
+        gap:5px;
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink {
+        background-image: url(../img/colla_01_t.png);
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_keyring {
+        background-image: url(../img/colla_03_m.jpg);
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_cp {
+        background-image: url(../img/colla_02_m.jpg);
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_show {
+        background-image: url(../img/colla_04_m.png);
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink a {
+        width: 372px;
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs a {
+        width:100%;
+    }
+/* -------------------------------------------------4.lookbook */
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide {
+        flex-flow: column nowrap; gap:10px;
+        justify-content: center;
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .lbmain {
+        width: 372px; height: 511px;
+        background-image: url(../img/looks/look_main_t.jpg);
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 {
+        font-size: 0.88rem;
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 em {
+        font-size: 1.0rem;
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
+        margin-bottom: 5px;
+    }
+    #wrap main #lookbook .container .bigbdle .pnum {
+        left: 42%; bottom:0;
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
+        font-size: 0.50rem;
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
+        font-size: 0.63rem;
+    }    
+
+/* -------------------------------------------------5.brand */
+    #wrap main #brand .container .swiper .swiper-scrollbar {
+        width: 335px; bottom: 37.5px;
+    }
+    #wrap main #brand .container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+        width: 108px;
+    }
+    #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .b_logo {
+        width: 250px;
+    }
+    #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_info {
+        font-size: 0.69rem;
+    }
+    #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_btn p {
+        font-size: 0.69rem;
+    }
+    #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_btn {
+        padding: 3px 30px 0; height: 24px; width: max-content;
+    }
+/* -------------------------------------------------6.footer */
+    #wrap footer * {
+        font-size: 0.44rem;
+    }
+    #wrap footer .line_zone .f_contact p {
+        margin-bottom: 16px;
+    }
+    #wrap footer .line_zone {
+        gap:20px;
+        border-top : 0.5px solid #fff;
+        border-bottom : 0.5px solid #fff;
+    }
+    #wrap footer .line_zone .f_menu + .f_line {
+        display: none;
+    }
+    #wrap footer .line_zone .f_line {
+        height:140px;
+        width: 0.5px;
+    }
+    #wrap footer .line_zone .f_contact .f_bundle a:nth-child(5),
+    #wrap footer .line_zone .f_contact .f_bundle a:nth-child(6),
+    #wrap footer .line_zone .f_contact .f_bundle a:nth-child(7),
+    #wrap footer .line_zone .f_contact .f_bundle a:nth-child(8) {
+        display: none;
+    }
+    #wrap footer .line_zone .f_menu {
+        display: none;
+    }
+    #wrap footer .line_zone .logozone a img {
+        width: 100%; height: 42px;
+    }
+    #wrap footer .line_zone .f_customer .f_bundle .c_cs {
+        display: none;
+    }
+    #wrap footer address {
+        width: 372px;
+    }
+
+}

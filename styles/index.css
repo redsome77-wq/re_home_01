@@ -86,9 +86,9 @@
     justify-content: space-between;
 }
 #wrap main #insta .container .red_logo {
+    width: 100%;
     display: flex;
     justify-content: center; align-items: center;
-    width: 560px;
 }
 #wrap main #insta .container .red_logo img {width:70%;}
 #wrap main #insta .container .instazone {
@@ -98,6 +98,7 @@
 #wrap main #insta .container .instazone .insta_1 {}
 #wrap main #insta .container .instazone .insta_2 {}
 #wrap main #insta .container .instazone .insta_right {
+    width: 100%;
     display: flex; flex-flow: row nowrap; gap: 10px;
 }
 #wrap main #insta .container .instazone .insta_right a {
