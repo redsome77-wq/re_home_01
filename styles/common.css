@@ -75,7 +75,8 @@
     display: flex;  flex-flow: row nowrap; align-items: end;
 }
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth li a span {width: 10px;}
-#wrap header .top_bnr .bnr_left .nav li .lnb_depth li a span img {width: 100%;}
+#wrap header .top_bnr .bnr_left .nav li .lnb_depth li a span img {width: 100%; margin-left: 1px;
+}
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 {
     display: flex; flex-flow: column nowrap;
     text-align: left;
@@ -83,7 +84,6 @@
     margin-top: 13px;
 }
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 li {
-    margin-left: 9px;
 }
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 li a {
     font-size: 0.75rem; font-weight:300; line-height: 1.5;
@@ -135,6 +135,7 @@
     font-size: 1.0rem; font-weight: 300;
 }
 #wrap main .section .title .more_btn {}
+#wrap main .section .container {width: 100%;}
 #wrap main * .more_btn u {
     font-size: 0.69rem; font-weight:500;
 }

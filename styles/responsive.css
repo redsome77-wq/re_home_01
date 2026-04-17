@@ -65,35 +65,104 @@
         font-size: 0.5rem;
     }
 /* -------------------------------------------------1.new */
-    #wrap main #new_product .container .product_new li {
+    #wrap main #new_product .container .product_list li {
         max-width: 216px;
     }
-    #wrap main #new_product .container .product_new li .p_info p {
+    #wrap main #new_product .container .product_list li .p_info p {
         font-size: 0.69rem;
     }
-    #wrap main #new_product .container .product_new li .p_info .price {
+    #wrap main #new_product .container .product_list li .p_info .price {
         font-size: 0.81rem;
     }
 /* -------------------------------------------------2.insta */
-    #wrap main #insta .container .r_logo {
+    #wrap main #insta .container .red_logo {
         display:none;
 }
 /* -------------------------------------------------3.member */
     #wrap main #members_bnr {
         padding: 50px 80px;
     }
+    #wrap main #members_bnr a {
+        height: 208px;
+    }
+    #wrap main #members_bnr a img {width: max-content; height: 45px;}
+
     #wrap main #members_bnr a p {
         font-size: 0.94rem;
     }
 /* -------------------------------------------------3.collabo */
-
     #wrap main #collabo .container .tab_title a {
         font-size: 0.94rem; 
     }
     #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink {
+        background-image: url(../img/colla_01_t.png);
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_keyring {
+        background-image: url(../img/colla_03_t.png);
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_cp {
+        background-image: url(../img/colla_02_t.png);
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_show {
+        background-image: url(../img/colla_04_t.png);
+    }
+    #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink a {
         width: 557px; height: 460px;
     }
+    #wrap main #collabo .container .tab_contents .peanuts .card_imgs a {
+        max-width:297px;
+    }
+/* -------------------------------------------------4.lookbook */
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide {
+        flex-flow: column nowrap; gap:20px;
+        justify-content: center;
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .lbmain {
+        width: 864px; height: 754px;
+        background-image: url(../img/looks/look_main_t.jpg);
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 {
+        font-size: 1.38rem;
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 em {
+        font-size: 1.56rem;
+    }
+    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #wrap main #lookbook .container .bigbdle .pnum {
+        left: 45%; bottom:0;
+    }
 
+/* -------------------------------------------------5.brand */
+    #wrap main #brand .container .swiper .swiper-scrollbar {
+        width: 746px; bottom: 37.5px;
+    }
+    #wrap main #brand .container .swiper .swiper-scrollbar .swiper-scrollbar-drag {
+        width: 208px;
+    }
+    #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .b_logo {
+        width: 250px;
+    }
+    #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_info {
+        font-size: 0.69rem;
+    }
+    #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_btn p {
+        font-size: 0.69rem;
+    }
+    #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .brand_btn {
+        padding: 3px 30px 0; height: 24px; width: max-content;
+    }
+/* -------------------------------------------------6.footer */
+    #wrap footer * {
+        font-size: 0.5rem;
+    }
+    #wrap footer * em {
+        font-size: 0.56rem;
+    }
+    #wrap footer .line_zone {
+        gap:60px;
+    }
 }
-
 @media screen and (max-width:401px) {}
