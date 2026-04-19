@@ -175,25 +175,30 @@
     background-position: center;
 }
 #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink {
-    width: 100%;
-    background-image: url(../img/colla_01.png);
-    background-size: cover;
-    background-position: center;
+    flex: 1; /* 너비를 남은 공간에 맞게 */
 }
 #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink a {
     display: block;
-    width: 908px; height: 760px;
+    width: 100%;
+    aspect-ratio: 908 / 760; /* 원본 비율 유지 */
+    background-image: url(../img/colla_01.png);
+    background-size: cover;
+    background-position: center;
 }
 #wrap main #collabo .container .tab_contents .peanuts .card_imgs {
     width: 100%;
     display: flex; flex-flow: column nowrap;
     justify-content: space-between;
     gap:10px;
+    flex: 0 0 auto; /* 일정 너비 고정 */
+    width: 502px;
 }
 #wrap main #collabo .container .tab_contents .peanuts .card_imgs a {
     display: block;
-    max-width:502px; height: 100%;
-    background-size:cover;
+    width: 100%;
+    aspect-ratio: 502 / 247; /* 760 ÷ 3장 높이 기준 */
+    background-size: cover;
+    background-position: center;
 }
 #wrap main #collabo .container .tab_contents .peanuts .card_imgs .p_keyring {
     background-image: url(../img/colla_03.jpg);
@@ -322,7 +327,7 @@
 }
 #wrap main #brand .container .swiper .swiper-wrapper {}
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide {
-    width: max-content; height: 655px;
+    width: 100%; height: 655px;
     background-position: center;
     background-size: cover;
     display: flex;  flex-flow: column nowrap;
