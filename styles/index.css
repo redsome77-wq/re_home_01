@@ -165,6 +165,7 @@
 }
 #wrap main #collabo .container .tab_contents {
     width: 100%;
+    aspect-ratio: 908 / 760; /* 원본 비율 유지 */
 }
 #wrap main #collabo .container .tab_contents .contents {
     width: 100%;
@@ -177,24 +178,21 @@
     background-size: cover;
     background-position: center;
 }
-#wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink {
-}
+#wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink {}
 #wrap main #collabo .container .tab_contents .peanuts .collabo_mainlink a {
     flex: 1; /* 너비를 남은 공간에 맞게 */
     display: block;
-    width: 908px;
-    aspect-ratio: 908 / 760; /* 원본 비율 유지 */
+    width: 908px; height: 100%;
     background-image: url(../img/colla_01.png);
     background-size: cover;
     background-position: center;
 }
 #wrap main #collabo .container .tab_contents .peanuts .card_imgs {
-    width: 100%;
     display: flex; flex-flow: column nowrap;
     justify-content: space-between;
     gap:10px;
-    flex: 0 0 auto; /* 일정 너비 고정 */
     width: 502px;
+    flex: 0 0 auto; /* 일정 너비 고정 */
 }
 #wrap main #collabo .container .tab_contents .peanuts .card_imgs a {
     display: block;
@@ -278,7 +276,9 @@
 }
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap  .slide_title .more_btn {}
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap  .slide_title .more_btn u {}
-#wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper {}
+#wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper {
+
+}
 #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper {
     height: 583px;
 }
@@ -345,7 +345,7 @@
     flex-flow: column nowrap; justify-content: center; align-items: center;
 }
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .b_logo {
-    height: 179px;
+    width:max-content; height: 179px;
     display: flex;  justify-content: center; align-items: center;
 }
 #wrap main #brand .container .swiper .swiper-wrapper .swiper-slide .slide_blk .b_logo img {width:100%;}

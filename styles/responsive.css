@@ -79,17 +79,18 @@
         display:none;
 }
 /* -------------------------------------------------3.member */
-    #wrap main #members_bnr {
-        padding: 50px 80px;
-    }
-    #wrap main #members_bnr a {
-        height: 208px;
-    }
-    #wrap main #members_bnr a img {width: max-content; height: 45px;}
 
-    #wrap main #members_bnr a p {
-        font-size: 0.94rem;
-    }
+#wrap main #members_bnr {
+    padding: 50px 80px;
+}
+#wrap main #members_bnr a {
+    height: 208px;
+}
+#wrap main #members_bnr a img {width: max-content; height: 45px;}
+
+#wrap main #members_bnr a p {
+    font-size: 0.94rem;
+}
 /* -------------------------------------------------3.collabo */
     #wrap main #collabo .container .tab_title a {
         font-size: 0.94rem; 
