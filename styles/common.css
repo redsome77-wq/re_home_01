@@ -139,6 +139,7 @@
     background:  #fcfcfc;
     position: relative;
     height: 100vh; max-width:440px; min-width: 320px;
+    margin-left: auto; /* 메뉴창 오른쪽 정렬 */
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .top {
     padding-top: 20px;
@@ -156,24 +157,56 @@ header .m_bg .m_side_wrap .user_menu {
     padding: 15px 20px;
     position: relative;
 }
-#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li::after {
-    position: absolute; right: 20px; top:20px;
-    content: ''; display: block; width: 12px; height: 12px;
-    background:url(https://cdn-icons-png.flaticon.com/128/6423/6423875.png);
-    background-size: 12px; filter: invert(1);
+/* nav_row: navmain + arrow_btn 가로 정렬 */
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li .nav_row {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
 }
-#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > a {
+/* 데스크톱에서는 nav_row를 투명하게 통과시키고, arrow_btn은 숨김 */
+#wrap header .top_bnr .bnr_left .nav li .nav_row {
+    display: contents;
 }
+#wrap header .top_bnr .bnr_left .nav li .nav_row .arrow_btn {
+    display: none;
+}
+/* arrow_btn 공통 */
+.arrow_btn {
+    background: none; border: none; cursor: pointer;
+    width: 14px; height: 14px;
+    padding: 0; flex-shrink: 0;
+}
+.arrow_btn img {
+    width: 100%; display: block;
+    transition: transform 0.3s;
+}
+/* 열린 상태일 때 화살표 90도 회전 */
+.arrow_btn.open img {
+    transform: rotate(90deg);
+}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > a {}
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth {
-    margin: 15px 0 0 15px;
-    height: 0; overflow: hidden; /* 애니메이션용 높이값 0 */
+    margin: 10px 0 0 0; /* 좌측 들여쓰기 제거 → 텍스트 너비 확보 */
+    height: 0; overflow: hidden;
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li {
+    padding: 4px 0;
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li > a {
-    font-size: 0.65rem; font-weight: 300; line-height: 1.5;
+    font-size: 0.81rem; font-weight: 300; line-height: 1.5;
+    width: 100%; /* 왼쪽 정렬을 위해 full width */
+    justify-content: flex-start; /* 텍스트 왼쪽 정렬 */
+}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 {}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 > li {}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 > li > a {
+    font-size: 0.69rem; font-weight: 300; line-height: 1.5;
+    width: 100%;
+    justify-content: flex-start;
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .user_menu {}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li:has(.arrow_btn.open) > .nav_row > .navmain {
+    color: red;
+}
 
 /* -------------------------------------------------메인~섹션별 설정 */
 #wrap main {}
