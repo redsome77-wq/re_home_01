@@ -51,10 +51,10 @@
         height: 900px;
     }
     #wrap main #hero_bnr .heroswiper .swiper-wrapper .slide1 {
-        background-image: url(../img/herobnr-t.jpg);
+        background-image: url(../img/herobnr-t_re.jpg);
     }
     #wrap main #hero_bnr .heroswiper .swiper-wrapper .slide2 {
-        background-image: url(../img/herobnr-t.jpg);
+        background-image: url(../img/herobnr-t_re.jpg);
     }
 
 /* -------------------------------------------------메인~섹션별 */
@@ -130,41 +130,41 @@
         aspect-ratio: 120 / 223;
 }
 /* -------------------------------------------------4.lookbook */
-    #wrap main #lookbook {
+    #wrap main #lookbook #lookbook_wrap {
         padding: 0 60px;
         padding-bottom: 50px;
     }
-    #wrap main #lookbook .title {
+    #wrap main #lookbook #lookbook_wrap .title {
         padding-top: 50px;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide {
         flex-flow: column nowrap; gap:20px;
         justify-content: center;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .lbmain {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .lbmain {
         width: 864px; height: 754px;
         background-image: url(../img/looks/look_main_t.jpg);
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 {
         font-size: 1.38rem;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 em {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 em {
         font-size: 1.56rem;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
         width: 100%;
         margin-bottom: 20px;
     }
-    #wrap main #lookbook .container .bigbdle .pnum {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .pnum {
         left: 45%; bottom:0;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
     font-size: 0.69rem;
 }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
     font-size: 0.81rem;
 }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
     top: 12%; right: 7%;
     width: 40px; height: 40px;
 }
@@ -331,33 +331,33 @@
 }
 /* -------------------------------------------------4.lookbook */
 
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide {
         flex-flow: column nowrap; gap:10px;
         justify-content: center;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .lbmain {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .lbmain {
         width: 100%; height: 511px;
         margin-bottom: 5px;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 {
         font-size: 0.88rem;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 em {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title h2 em {
         font-size: 1.0rem;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .slide_title {
         margin-bottom: 20px;
     }
-    #wrap main #lookbook .container .bigbdle .pnum {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .pnum {
         left: 42%; bottom:0;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info p {
         font-size: 0.50rem;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
         font-size: 0.63rem;
     }
-    #wrap main #lookbook .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
+    #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
         top: 25%; right: 7%;
         width: 20px; height: 20px;
     }
