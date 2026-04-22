@@ -33,13 +33,21 @@ for(let i=0; i<6; i++){
     });
 }
 
-//전체메뉴 클릭 시 전체메뉴 나타나기
+//전체메뉴 클릭 시 전체메뉴 나타나기, 스크롤막기
 const ham = document.querySelector('.bnr_short #ham');
 const mBg = document.querySelector('.m_bg');
 const sideXBtn = document.querySelector('.top .close_ham');
-ham.addEventListener('click', function(){ mbgSH('block'); });
-sideXBtn.addEventListener('click', function(){ mbgSH('none'); });
-function mbgSH(status){ return mBg.style.display = status; }
+
+ham.addEventListener('click', function(){
+    mbgSH('block');
+    document.body.style.overflow = 'hidden';
+});
+sideXBtn.addEventListener('click', function(){
+    mbgSH('none');
+    document.body.style.overflow = 'visible';
+});
+
+function mbgSH(status){ return mBg.style.display = status;};
 
 //데스크톱 메뉴(gnb) 복제해서 모바일메뉴(m_nav)위치에 붙여넣기
 const mNav = mBg.querySelector('.m_nav');

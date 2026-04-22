@@ -58,7 +58,7 @@
 #wrap main #new_product .container .product_list li .p_img .new_img {}
 #wrap main #new_product .container .product_list li .p_img .new_img img {width: 100%;}
 #wrap main #new_product .container .product_list li .p_img .wish_btn {
-    position: absolute; z-index: 999;
+    position: absolute; z-index: 990;
     top:12px; right: 12px;
     width: 24px;
 }
@@ -115,7 +115,7 @@
     display: none;
 }
 #wrap main #insta .container .instazone .insta_right a .ins_hum {
-    position: absolute; z-index: 999;
+    position: absolute; z-index: 990;
     display: flex;
 }
 #wrap main #insta .container .instazone .insta_right a .ins_ac {
@@ -292,7 +292,7 @@
 }
 #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .pp_img img {width: 100%;}
 #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_img .kidsmark {
-    position: absolute; z-index: 999;
+    position: absolute; z-index: 990;
     top: 54px; right: 27px;
     width: 40px; height: 40px;
 }
@@ -304,6 +304,7 @@
     font-weight: 300;
 }
 #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-wrapper .swiper-slide .p_info .price {
+    margin-top: 5px;
     font-weight: 600;
 }
 #wrap main #lookbook #lookbook_wrap .container .bigbdle .bigwrapper .swiper-slide .right_wrap .lb_swiper .swiper-scrollbar {

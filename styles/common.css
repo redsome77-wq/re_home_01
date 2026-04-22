@@ -28,7 +28,7 @@
     height: 48px;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 0 55px;
-    position: relative; z-index: 999;
+    position: relative; z-index: 998;
 }
 #wrap header .top_bnr .bnr_left {
     display: flex; flex-flow: row nowrap;
@@ -71,11 +71,12 @@
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth > li {
     margin-left: 22px;
 }
-#wrap header .top_bnr .bnr_left .nav li .lnb_depth li a {
+#wrap header .top_bnr .bnr_left .nav li .lnb_depth .event_row {
     display: flex;  flex-flow: row nowrap; align-items: end;
 }
-#wrap header .top_bnr .bnr_left .nav li .lnb_depth li a span {width: 10px;}
-#wrap header .top_bnr .bnr_left .nav li .lnb_depth li a span img {width: 100%; margin-left: 1px;
+#wrap header .top_bnr .bnr_left .nav li .lnb_depth li a {}
+#wrap header .top_bnr .bnr_left .nav li .lnb_depth li a span {margin-left: 1px; width: 10px;}
+#wrap header .top_bnr .bnr_left .nav li .lnb_depth li a span img {width: 100%;
 }
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 {
     display: flex; flex-flow: column nowrap;
@@ -84,6 +85,7 @@
     margin-top: 13px;
 }
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 li {
+    margin-left: 15px;
 }
 #wrap header .top_bnr .bnr_left .nav li .lnb_depth li .lnb_depth_2 li a {
     font-size: 0.75rem; font-weight:300; line-height: 1.5;
@@ -137,16 +139,20 @@
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap {
     background:  #fcfcfc;
-    position: relative;
-    height: 100vh; max-width:440px; min-width: 320px;
+    position: relative; z-index: 999;
+    height: 100vh; max-width:320px; min-width: 160px;
     margin-left: auto; /* 메뉴창 오른쪽 정렬 */
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .top {
     padding-top: 20px;
     display: flex; flex-flow: row nowrap; gap:10px; align-items: center;
-    left: 0;
+    justify-content: end;
+    margin: 0 25px 30px 0;
 }
-#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .top a {}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .top a:first-child {line-height: 1.1;}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .top a {line-height: 1.0;}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .top .close_ham {width: 10px; line-height: 0.6;}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .top a img {width: 100%;}
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav {}
 header .m_bg .m_side_wrap .user_menu {
     display: flex; flex-flow: row nowrap;
@@ -179,25 +185,36 @@ header .m_bg .m_side_wrap .user_menu {
     width: 100%; display: block;
     transition: transform 0.3s;
 }
-/* 열린 상태일 때 화살표 90도 회전 */
 .arrow_btn.open img {
     transform: rotate(90deg);
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > a {}
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth {
-    margin: 10px 0 0 0; /* 좌측 들여쓰기 제거 → 텍스트 너비 확보 */
+    text-align: left;
+    margin: 20px 0 0 20px;
     height: 0; overflow: hidden;
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li {
     padding: 4px 0;
 }
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth .event_row {
+    padding: 4px 0;
+    display: flex;  flex-flow: row nowrap; align-items: end;
+}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth .event_row a {line-height: 1.25;}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth .event_row span {margin-left: 3px;}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth .event_row span img {width: 100%;}
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li > a {
     font-size: 0.81rem; font-weight: 300; line-height: 1.5;
-    width: 100%; /* 왼쪽 정렬을 위해 full width */
-    justify-content: flex-start; /* 텍스트 왼쪽 정렬 */
+    width: max-content;
+    justify-content:flex-end;
 }
-#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 {}
-#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 > li {}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 {
+    margin: 5px 0 0 20px;
+}
+#wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 > li {
+    display: flex;  flex-flow: row nowrap; align-items:flex-start;
+}
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li > .lnb_depth > li .lnb_depth_2 > li > a {
     font-size: 0.69rem; font-weight: 300; line-height: 1.5;
     width: 100%;
@@ -205,7 +222,7 @@ header .m_bg .m_side_wrap .user_menu {
 }
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .user_menu {}
 #wrap header .top_bnr .bnr_short .m_bg .m_side_wrap .m_nav .nav > li:has(.arrow_btn.open) > .nav_row > .navmain {
-    color: red;
+    color: #E72819;
 }
 
 /* -------------------------------------------------메인~섹션별 설정 */
