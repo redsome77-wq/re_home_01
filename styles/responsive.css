@@ -190,9 +190,9 @@
         padding: 3px 30px 0; height: 24px; width: max-content;
     }
 /* -------------------------------------------------6.footer */
-    #wrap footer * {
-        font-size: 0.5rem;
-    }
+#wrap footer * {
+    font-size: 0.5rem;
+}
     #wrap footer * em {
         font-size: 0.56rem;
     }
@@ -201,6 +201,88 @@
     }
     #wrap footer address {
         width: 650px;
+    }
+/* -------------------------------------------------------- */
+/* ---------------------------------------------------**서브 */
+    #wrap main #salewrap {
+        max-width: 864px;
+        padding-top: 50px;
+    }
+    #wrap main .sub_wrap {
+        max-width: 864px;
+    }
+    #wrap main .sub_wrap .sub_part .title {gap: 3px;}
+
+    #wrap main .sub_wrap .sub_part .title h1 {
+        font-size: 1.0rem;
+    }
+    #wrap main .sub_wrap .sub_part .title p {
+        font-size: 0.81rem;
+    }
+    #wrap main #salewrap .sale_imgzone {
+        gap:10px;
+        width: calc(100% - 423px);
+    }
+    #wrap main #salewrap .sale_imgzone .sub_imgzone {
+        gap:10px;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .select .select_grey .buy_info {
+        flex-flow: column nowrap;
+        justify-content:left; align-items:flex-start; gap:4px;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row button {
+        font-size: 0.94em;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart {
+    width: calc(100% - 45px - 222px);
+    min-width: 50px;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .buy {
+    width: 100%;
+    max-width: 222px;
+    min-width: 160px;
+    }
+    #wrap main nav .p_info {
+        gap: 100px;
+    }
+    #wrap main nav .p_info li a {
+        width: 150px;
+        font-size: 1.0rem; 
+    }
+    #wrap main #p_long_img {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 800px;
+        min-width: 300px;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .color_size .opt > p {
+    font-size: 0.55rem;
+    }#wrap main #salewrap .sale_info .opt_zone .select {
+        margin-top: 80px;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .select .select_grey .buy_info * {
+        font-size: 0.81rem;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .select .select_sum {
+        font-size: 0.94rem;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .select .select_sum .price_sum {
+        font-size: 1.25rem;
+    }
+    #wrap main #review .sub_part .contents .r_list li {
+        max-width: 215px;
+        min-width: 120px;
+    }
+    #wrap main #review .sub_part .contents .r_list li .rev_cont .rev p em,
+    #wrap main #review .sub_part .contents .r_list li .rev_cont .rev_optin {
+        font-size: 0.81rem;
+    }
+    #wrap main #qna > * {
+        font-size: 0.81rem;
+    }
+    #wrap main #qna .sub_part .contents #write_btn {
+        font-size: 0.81rem;
+        width: 110px; height:35px;
     }
 }
 
@@ -441,5 +523,104 @@
     #wrap footer address {
         width: 372px;
     }
-
+/* -------------------------------------------------------- */
+/* ---------------------------------------------------**서브 */
+    #wrap main #salewrap {
+        flex-flow: column nowrap;
+        padding-top: 50px;
+        padding: 0 15px;
+        align-items:center;
+    }
+    #wrap main #salewrap .sale_imgzone .sub_imgzone {
+        display: none;
+    }
+    #wrap main #salewrap .sale_info {
+        width: 100%;
+        min-width: 372px;
+    }
+    #wrap main #salewrap .sale_info .prod_info {
+        margin-top: 3px;
+        display: flex; flex-flow: column nowrap; align-items:end;
+    }
+    #wrap main #salewrap .sale_info .prod_info .p_name_link {
+        width: 100%;
+        gap: 3px;
+    }
+#wrap main #salewrap .sale_info .prod_info .p_name_link p {
+        font-size: 0.75rem; font-weight: 500;
+    }
+    #wrap main #salewrap .sale_info .prod_info .p_name_link .share_link {
+        width: 10px;
+    }
+    #wrap main #salewrap .sale_info .prod_info .p_price {
+        font-size: 0.94rem; font-weight:600;
+    }
+    #wrap main #salewrap .sale_info .opt_zone {
+        display: flex; flex-flow: column nowrap;
+        align-items: end;
+        margin-top: 0px;
+        padding: 30px 0;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .color_size .size {
+        margin-top: 13px;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .color_size .opt {
+        max-width: 230px;
+        display: flex; flex-flow: row nowrap;
+        justify-content: space-between; align-items: center;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .color_size .opt > p {
+        font-size: 0.5rem;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li button.active,
+    #wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li button {
+        width: 37px; height: 18px; font-size: 0.5rem;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .select {
+        display: none;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .btn_wrap {
+        width: 100%; height: 60px;
+        background-color: #000;
+        padding-top: 0px;
+        padding: 0 40px;
+        display: none; flex-flow: row nowrap;
+        justify-content: space-between; align-items: center;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row {
+        width: 100%;
+        align-items: center;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish img {
+        width:16px;
+    }
+    #wrap main nav .p_info {
+        gap: 25px;  height: 27px;
+        margin: 0 0;
+        margin-bottom: 35px;
+    }
+    #wrap main nav .p_info li a {
+        width: 50px; height: 27px;
+        font-size: 0.81rem;
+    }
+    #wrap main nav .p_info li .active {
+        color: #E72819; border-bottom: #E72819 solid 2px;
+    }
+    #wrap main #review .sub_part .contents {
+        margin-top: 20px;
+    }
+    #wrap main #review .sub_part .contents .r_list {
+        max-width: 372px; gap: 10px;
+        overflow: hidden;
+    }
+    #wrap main #review .sub_part .contents .r_list li {
+        min-width: 120px;
+    }
+    #wrap main #review .sub_part .contents .r_list li .rev_cont .rev p em,
+    #wrap main #review .sub_part .contents .r_list li .rev_cont .rev_optin {
+        font-size: 0.63rem;
+    }
+    #wrap main #qna .sub_part .contents .qna_table dt .qna_dt li,
+    #wrap main #qna .sub_part .contents .qna_table dd .qna_dd li {
+        width: 130px;
 }

@@ -1,13 +1,16 @@
 /* product.css */
 #wrap main #salewrap {
-    width: 100%;
-    display: flex; flex-flow: row nowrap; gap:40px;
+    padding: 0 50px;
+    margin: 0 auto;
+    width: 100%; gap: 40px;
+    max-width: 1620px;
+    display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items:start;
     padding-top: 150px;
 }
 #wrap main #salewrap .sale_imgzone {
-    width: 100%;
-    max-width: 924px;
+    width: calc(100% - 656px);
+    min-width: 394px;
     display: flex; flex-flow: column nowrap;
     justify-content: center; align-items: center; gap:22px;
 }
@@ -17,18 +20,22 @@
 }
 #wrap main #salewrap .sale_imgzone .main_img img {width:100%;}
 #wrap main #salewrap .sale_imgzone .sub_imgzone {
-    width: 100%; gap:22px;
+    width: 100%;
     display: flex; flex-flow: row nowrap;
     justify-content:space-between; align-items: center;
 }
-#wrap main #salewrap .sale_imgzone .sub_imgzone li {}
+#wrap main #salewrap .sale_imgzone .sub_imgzone li {
+    width: calc((100% - 15px) / 3);
+    max-width: 300px; 
+}
 #wrap main #salewrap .sale_imgzone .sub_imgzone li a {
     display: block;
     width: 100%;
 }
 #wrap main #salewrap .sale_imgzone .sub_imgzone li a img {width:100%;}
 #wrap main #salewrap .sale_info {
-    width: 656px;
+    width: calc(100% - (100% - 656px - 40px));
+    min-width: 350px;
 }
 #wrap main #salewrap .sale_info .p_cate {
     font-size: 0.81rem; font-weight: 200;
@@ -37,7 +44,7 @@
     margin-top: 48px;
 }
 #wrap main #salewrap .sale_info .prod_info .p_name_link {
-    display: flex; flex-flow: row; gap: 15px;
+    display: flex; flex-flow: row nowrap; gap: 15px;
     align-items: center;
 }
 #wrap main #salewrap .sale_info .prod_info .p_name_link p {
@@ -54,10 +61,14 @@
 }
 #wrap main #salewrap .sale_info .opt_zone {
     margin-top: 134px;
+    width: 100%;
 }
 #wrap main #salewrap .sale_info .opt_zone .color_size {}
 #wrap main #salewrap .sale_info .opt_zone .color_size .opt {
     display: flex; flex-flow: column nowrap; gap:20px;
+}
+#wrap main #salewrap .sale_info .opt_zone .color_size .opt > p {
+    font-size: 0.75rem;
 }
 #wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul {
     display: flex; flex-flow: row nowrap; gap:10px;
@@ -66,7 +77,7 @@
 #wrap main #salewrap .sale_info .opt_zone .color_size .opt .btn_ul li button {
     font-size: 0.75rem; font-weight:400;
     width: 80px; height: 30px;
-    border: #444 solid 0.3px; border-radius: 5px;
+    border: #d0d0d0 solid 0.3px; border-radius: 5px;
     background-color: #fff;
     color: #000;
 }
@@ -102,10 +113,15 @@
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
 }
-#wrap main #salewrap .sale_info .opt_zone .select .select_grey p {
+
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .buy_info {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .buy_info p {
     font-weight: 300;
 }
-#wrap main #salewrap .sale_info .opt_zone .select .select_grey p em {
+#wrap main #salewrap .sale_info .opt_zone .select .select_grey .buy_info p em {
     font-weight: 600;
 }
 #wrap main #salewrap .sale_info .opt_zone .select .select_grey .select_box {
@@ -131,73 +147,89 @@
     margin-top: 50px;
     width: 100%;
     padding-top: 30px;
-    border-top: #444 solid 1px;
+    border-top: #d0d0d0 solid 1px;
 }
 #wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row {
     display: flex; flex-flow: row nowrap; gap:8px;
 }
 #wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish {
-    width: 62px; height: 62px;
-    border: #444 solid 0.3px; border-radius: 6px;
+    width: 45px; height: 45px;
+    border: #d0d0d0 solid 0.3px; border-radius: 6px;
     background-color: #fff;
     color: #000;
 }
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish img {width:28px;}
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy {
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .wish img {width:21px;}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row {
     display: flex; flex-flow: row nowrap; gap:8px;
 }
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy .cart {
-    width: 256px; height: 62px;
-    border: #444 solid 0.3px; border-radius: 6px;
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row button {
+    height: 45px;  border-radius: 6px; font-size: 1.06em;
+}
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart {
+    width: calc(100% - 45px - 322px);
+    min-width: 140px;
+    border: #d0d0d0 solid 0.3px;
     background-color: #fff;
     color: #000;
 }
-#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .cart_buy .buy {
-    width: 322px; height: 62px;
-    border-radius: 6px;
+#wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row .buy {
+    width: 100%;
+    max-width: 322px;
+    min-width: none;
     border: none; 
     background-color: #E72819;
     color: #fff;
 }
 #wrap main nav {}
 #wrap main nav .p_info {
-    width: 100%; height: 76px;
-    display: flex; flex-flow: row nowrap; gap: 425px;
+    width: 100%; height: 35px;
+    display: flex; flex-flow: row nowrap; gap: 200px;
     justify-content: center; align-items: center;
-    border-bottom: #444 solid 0.5px;
+    border-bottom: #d0d0d0 solid 0.5px;
     margin: 100px 0;
 }
 #wrap main nav .p_info li {}
 #wrap main nav .p_info li a {
     display: inline-block;
-    width: 200px;
+    width: 150px; height: 35px;
     text-align: center;
-    font-size: 1.5rem; font-weight: 500;
+    font-size: 1.25rem; font-weight: 500;
 }
 #wrap main nav .p_info li .active {
     color: #E72819; border-bottom: #E72819 solid 4px;
 }
 #wrap main #p_long_img {
     margin: 0 auto;
-    width: 1046px;
-    padding: 100px 0;
+    width: 100%;
+    max-width: 1046px;
+    min-width: 600px;
+    padding: 0 50px;
 }
 #wrap main #p_long_img img {width:100%;}
 #wrap main .sub_wrap {
-    padding: 100px 150px;
+    padding: 0 50px 100px;
 }
-
+#wrap main .sub_wrap {
+    width: 100%;
+    max-width: 1620px;
+    margin: 0 auto;
+}
 #wrap main .sub_wrap .sub_part .title {
     display: flex; flex-flow: row nowrap; gap: 8px;
     align-items: end;
 }
 #wrap main .sub_wrap .sub_part .title h1 {
-    font-size: 1.38rem; font-weight: 600;
+    font-size: 1.13rem; font-weight: 600;
 }
 #wrap main .sub_wrap .sub_part .title p {line-height: 1.0;}
-#wrap main .sub_wrap .sub_part .contents {}
+#wrap main .sub_wrap .sub_part .contents {
+    margin-top: 20px;
+    width: 100%;
+}
 
-#wrap main #review {}
+#wrap main #review {
+    margin-top: 100px;
+}
 #wrap main #review .sub_part {}
 #wrap main #review .sub_part .contents .r_list {
     width: 100%;
@@ -205,7 +237,9 @@
     justify-content: space-between;
 }
 #wrap main #review .sub_part .contents .r_list li {
-    width: 360px;
+    width: calc((100% - 24px) / 4);
+    max-width: 360px;
+    min-width: 215px;
     display: flex; flex-flow: column nowrap; gap: 8px;
 }
 #wrap main #review .sub_part .contents .r_list li .rev_more {
@@ -214,7 +248,7 @@
 #wrap main #review .sub_part .contents .r_list li .rev_more img {width:100%;}
 #wrap main #review .sub_part .contents .r_list li .rev_cont {}
 #wrap main #review .sub_part .contents .r_list li .rev_cont .rev {
-    display: flex; flex-flow: column nowrap; gap: 3px;
+    display: flex; flex-flow: column nowrap; margin-bottom: 3px;
 }
 #wrap main #review .sub_part .contents .r_list li .rev_cont .rev p {
     display: flex; flex-flow: row nowrap; gap: 3px; align-items: center;
@@ -228,15 +262,15 @@
     font-size: 0.69rem; font-weight: 200;
 }
 #wrap main #review .sub_part .contents .r_list li .rev_cont .rev_optin {}
+#wrap main #qna {}
 #wrap main #qna .sub_part {}
 #wrap main #qna .sub_part .title {}
 #wrap main #qna .sub_part .title h1 {}
 #wrap main #qna .sub_part .title p {}
 #wrap main #qna .sub_part .contents {
-    margin-top: 50px; width: 100%;
+    width: 100%;
     display: flex; flex-flow: column nowrap;
-    gap:20px;
-    justify-content: right;
+    gap:20px; align-items: end;
 }
 #wrap main #qna .sub_part .contents .qna_table {
     width: 100%;
@@ -244,26 +278,43 @@
     border-bottom: solid 2px #000;
 }
 #wrap main #qna .sub_part .contents .qna_table dt {
-    font-weight: 600;
+    font-weight: 600; height: 40px;
+    border-bottom: solid 2px #000;
 }
 #wrap main #qna .sub_part .contents .qna_table dt .qna_dt {
-    display: flex; flex-flow: row nowrap;
-    border-bottom: solid 2px #000;
+    display: flex; flex-flow: row nowrap; height: 100%;
+    align-items: center;
 }
 #wrap main #qna .sub_part .contents .qna_table dt .qna_dt li {
     font-weight: 600;
 }
-#wrap main #qna .sub_part .contents .qna_table dd {}
+#wrap main #qna .sub_part .contents .qna_table dd {
+    height: 60px;
+}
 #wrap main #qna .sub_part .contents .qna_table dd .qna_dd {
     display: flex; flex-flow: row nowrap; 
+    height: 100%; align-items: center;
+    border-bottom: solid #d0d0d0 0.5px;
 }
 #wrap main #qna .sub_part .contents .qna_table dd .qna_dd li {}
 #wrap main #qna .sub_part .contents .qna_table dd .qna_dd li:first-child {
     font-weight: 600;
 }
+#wrap main #qna .sub_part .contents .qna_table dt .qna_dt li,
+#wrap main #qna .sub_part .contents .qna_table dd .qna_dd li {
+    width: 130px;
+    text-align: center;
+}
+#wrap main #qna .sub_part .contents .qna_table dd .qna_dd li:nth-child(2) {
+    text-align: left;
+}
+#wrap main #qna .sub_part .contents .qna_table dt .qna_dt li:nth-child(2),
+#wrap main #qna .sub_part .contents .qna_table dd .qna_dd li:nth-child(2) {
+    width: calc(100% - 390px);
+}
 #wrap main #qna .sub_part .contents #write_btn {
     color: #fff; background-color: #000;
-    width: 156px; height:45px;
+    width: 130px; height:40px;
     border-radius: 10px;
     font-size: 1.13rem; font-weight:600;
 }

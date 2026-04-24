@@ -36,7 +36,13 @@
                         </a>
                     </h1>
                     <ul class="nav">
-                        <li><a href="#" class="navmain">Shop</a>
+                        <li>
+                            <div class="nav_row">
+                                <a href="#" class="navmain">Shop</a>
+                                <button class="arrow_btn" aria-label="하위메뉴 열기">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/6423/6423875.png" alt="">
+                                </button>
+                            </div>
                             <ul class="lnb_depth">
                                 <li><a href="#">신상품</a></li>
                                 <li><a href="#">베스트</a></li>
@@ -54,7 +60,13 @@
                                 <li><a href="#">리빙</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="navmain">Looks</a>
+                        <li>
+                            <div class="nav_row">
+                                <a href="#" class="navmain">Looks</a>
+                                <button class="arrow_btn" aria-label="하위메뉴 열기">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/6423/6423875.png" alt="">
+                                </button>
+                            </div>
                             <ul class="lnb_depth">
                                 <li><a href="#">룩북</a></li>
                                 <li><a href="#">영상</a></li>
@@ -68,24 +80,53 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#" class="navmain">Event</a>
+                        <li>
+                            <div class="nav_row">
+                                <a href="#" class="navmain">Event</a>
+                                <button class="arrow_btn" aria-label="하위메뉴 열기">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/6423/6423875.png" alt="">
+                                </button>
+                            </div>
                             <ul class="lnb_depth">
-                                <li><a href="#">바로가기<span><img src="./img/common/link.svg" alt=""></span></a></li>
+                                <li class="event_row">
+                                    <a href="#">바로가기</a>
+                                    <span>
+                                        <img src="./img/common/link.svg" alt="">
+                                    </span>
+                                </li>
                             </ul>
                         </li>
-                        <li><a href="#" class="navmain">Brand</a>
+                        <li>
+                            <div class="nav_row">
+                                <a href="#" class="navmain">Brand</a>
+                                <button class="arrow_btn" aria-label="하위메뉴 열기">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/6423/6423875.png" alt="">
+                                </button>
+                            </div>
                             <ul class="lnb_depth">
                                 <li><a href="#">브랜드 소개</a></li>
                                 <li><a href="#">매장</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="navmain">Sale</a>
+                        <li>
+                            <div class="nav_row">
+                                <a href="#" class="navmain">Sale</a>
+                                <button class="arrow_btn" aria-label="하위메뉴 열기">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/6423/6423875.png" alt="">
+                                </button>
+                            </div>
                             <ul class="lnb_depth">
                                 <li><a href="#">시즌 상품</a></li>
                                 <li><a href="#">아울렛</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="navmain">Gift</a>
+                        <li>
+                            <div class="nav_row">
+                                <a href="#" class="navmain">Gift</a>
+                                <button class="arrow_btn" aria-label="하위메뉴 열기">
+                                    <img src="https://cdn-icons-png.flaticon.com/128/6423/6423875.png" alt="">
+                                </button>
+                            </div>
                             <ul class="lnb_depth">
                                 <li><a href="#">사은품</a></li>
                                 <li><a href="#">선물하세요</a></li>
@@ -99,6 +140,21 @@
                     <a href="#"><img src="./img/common/bnr_wish.png" alt="찜리스트"></a>
                     <a href="#"><img src="./img/common/bnr_profile.png" alt="마이페이지"></a>
                     <a href="#">Korea / ￦</a>
+                </div>
+                <div class="bnr_short">
+                    <a href="#"><img src="./img/common/bnr_search.png" alt="검색"></a>
+                    <a href="#"><img src="./img/common/bnr_cart.png" alt="카트"></a>
+                    <a href="#" id="ham"><img src="./img/common/ham.svg" alt="메뉴모음"></a>
+                    <div class="m_bg">
+                        <div class="m_side_wrap">
+                            <div class="top"><!-- js붙여넣기 위치 -->
+                                <a href="#"><img src="./img/common/bnr_search.png" alt="검색"></a>
+                                <a href="#"><img src="./img/common/bnr_cart.png" alt="카트"></a>
+                                <a href="#" class="close_ham"><img src="./img/common/ham.svg" alt="닫기"></a>
+                            </div>
+                            <div class="m_nav"><!-- js붙여넣기 위치 --></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="sub_bg"></div><!-- 서브가 나타날때 함께 나타나는 배경 -->
@@ -143,7 +199,10 @@
                         </div>
                         <div class="select">
                             <div class="select_grey">
-                                <p>[로즈 스트라이프 요꼬 카라 프릴 원피스] - <em>사이즈 130 , 컬러 WHITE</em></p>
+                                <div class="buy_info">
+                                    <p>[로즈 스트라이프 요꼬 카라 프릴 원피스] - </p>
+                                    <p><em>사이즈 130 , 컬러 WHITE</em></p>
+                                </div>
                                 <div class="select_box">
                                     <button type="button"><img src="" alt=""></button>
                                     <p>1</p>
@@ -158,10 +217,8 @@
                         <div class="btn_wrap">
                             <div class="btn_row">
                                 <button type="button" class="wish"><img src="./img/product/zzim_btn.svg" alt=""></button>
-                                <div class="cart_buy">
-                                    <button type="button" class="cart">장바구니</button>
-                                    <button type="button" class="buy">바로구매</button>
-                                </div>
+                                <button type="button" class="cart">장바구니</button>
+                                <button type="button" class="buy">바로구매</button>
                             </div>
                         </div>
                     </div>
