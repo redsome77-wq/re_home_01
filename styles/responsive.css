@@ -528,18 +528,24 @@
     #wrap main #salewrap {
         flex-flow: column nowrap;
         padding-top: 50px;
-        padding: 0 15px;
+        padding: 0 0;
         align-items:center;
     }
     #wrap main #salewrap .sale_imgzone .sub_imgzone {
         display: none;
+        padding: 0 15px;
     }
     #wrap main #salewrap .sale_info {
         width: 100%;
         min-width: 372px;
     }
+    #wrap main #salewrap .sale_info .p_cate {
+        font-size: 0.5rem;
+        padding-left: 15px;
+    }
     #wrap main #salewrap .sale_info .prod_info {
         margin-top: 3px;
+        padding-left: 15px;
         display: flex; flex-flow: column nowrap; align-items:end;
     }
     #wrap main #salewrap .sale_info .prod_info .p_name_link {
@@ -554,12 +560,18 @@
     }
     #wrap main #salewrap .sale_info .prod_info .p_price {
         font-size: 0.94rem; font-weight:600;
+        padding-right: 15px;
     }
     #wrap main #salewrap .sale_info .opt_zone {
+        width: 100%;
         display: flex; flex-flow: column nowrap;
         align-items: end;
         margin-top: 0px;
         padding: 30px 0;
+        position: relative;
+    }
+    #wrap main #salewrap .sale_info .opt_zone .color_size {
+        padding-right: 15px;
     }
     #wrap main #salewrap .sale_info .opt_zone .color_size .size {
         margin-top: 13px;
@@ -584,8 +596,10 @@
         background-color: #000;
         padding-top: 0px;
         padding: 0 40px;
-        display: none; flex-flow: row nowrap;
+        display: flex; flex-flow: row nowrap;
         justify-content: space-between; align-items: center;
+        position: fixed;
+        margin: 0 auto;
     }
     #wrap main #salewrap .sale_info .opt_zone .btn_wrap .btn_row {
         width: 100%;
@@ -601,10 +615,10 @@
     }
     #wrap main nav .p_info li a {
         width: 50px; height: 27px;
-        font-size: 0.81rem;
+        font-size: 0.5rem;
     }
     #wrap main nav .p_info li .active {
-        color: #E72819; border-bottom: #E72819 solid 2px;
+        color: #E72819; border-bottom: #E72819 solid 2px; line-height: 2.5;
     }
     #wrap main #review .sub_part .contents {
         margin-top: 20px;
@@ -620,7 +634,20 @@
     #wrap main #review .sub_part .contents .r_list li .rev_cont .rev_optin {
         font-size: 0.63rem;
     }
+    #wrap main #qna > * {
+        font-size: 0.56rem;
+    }
+    #wrap main #qna .sub_part .contents .qna_table dt .qna_dt,
+    #wrap main #qna .sub_part .contents .qna_table dd .qna_dd {
+        gap:5px;
+    }
     #wrap main #qna .sub_part .contents .qna_table dt .qna_dt li,
     #wrap main #qna .sub_part .contents .qna_table dd .qna_dd li {
-        width: 130px;
+        width: 50px;
+    }
+    #wrap main #qna .sub_part .contents .qna_table dt .qna_dt li:nth-child(2),
+    #wrap main #qna .sub_part .contents .qna_table dd .qna_dd li:nth-child(2) {
+        width: calc(100% - 150px);
+    }
+
 }
